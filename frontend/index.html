@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление проектами</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Управление проектами и изображениями</h1>
+
+    <section class="projects">
+        <h2>Проекты</h2>
+        <div class="new-project">
+            <input type="text" id="projectName" placeholder="Название проекта">
+            <button id="createProject">Создать проект</button>
+        </div>
+        <ul id="projectList"></ul>
+    </section>
+
+    <section id="imagesSection" class="hidden">
+        <h2 id="currentProjectTitle"></h2>
+        <p class="hint">Подсказка: клик по миниатюре или кнопка «Аннотировать» открывают страницу разметки.</p>
+        <div class="upload-area" id="uploadArea">
+            <p>Перетащите изображения сюда или выберите файлы</p>
+            <input type="file" id="imageInput" multiple accept="image/*">
+        </div>
+        <div id="imagesContainer" class="images"></div>
+        <button id="backToProjects">← Назад к проектам</button>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
